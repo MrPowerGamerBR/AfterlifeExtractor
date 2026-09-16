@@ -1,4 +1,6 @@
-[CSER.283.bmp](https://github.com/user-attachments/files/32267924/CSER.283.bmp)
+<div align="center">
+<img width="320" height="200" alt="CSER 283" src="https://github.com/user-attachments/assets/d0f4598f-75c9-4c16-9200-a6daccb13794" />
+</div>
 
 <h1 align="center">😇 AfterlifeExtractor 😈</h1>
 
@@ -18,12 +20,12 @@ The container top tag is `JIFF`.
 
 For the `CSER` chunk, the chunk content is:
 
-
-| Size  | Type                                                    |
-|-------|---------------------------------------------------------|
-| int32 | Unknown, seems to always be 2                           |
-| int32 | Content Size, relative to AFTER the header + chunk size |
-| int32 | Unknown, seems to always be 0                           |
-| int32 | Unknown, seems to always be 0                           |
+| Size                   | Type                                                    |
+|------------------------|---------------------------------------------------------|
+| int32                  | Unknown, seems to always be 2                           |
+| int32                  | Content Size, relative to AFTER the header + chunk size |
+| int32                  | Unknown, seems to always be 0                           |
+| int32                  | Unknown, seems to always be 0                           |
+| byte[contentSize - 16] | Contents                                                |
 
 The `CSER` chunk has... resources (wow), such as bitmaps, cursor, and other unknown formats.
